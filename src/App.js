@@ -3,7 +3,7 @@ import { Main } from "./layouts/Main";
 
 function App() {
   return (
-    <Router>
+    <Router basename='/recipe-app'>
       <Main />
     </Router>
   );
