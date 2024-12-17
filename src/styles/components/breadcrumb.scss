@@ -1,0 +1,45 @@
+.breadcrumb {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  max-width: max-content;
+  padding: 0 0 15px;
+  margin: 0 auto -15px;
+  overflow: auto;
+
+  &__item {
+    position: relative;
+    flex-shrink: 0;
+
+    a {
+      text-decoration: none;
+      color: var(--dark-grey);
+      transition: color 0.3s;
+
+      @media (hover: hover) {
+        &:hover {
+          color: var(--black);
+        }
+      }
+    }
+
+    &:after {
+      display: inline-block;
+      content: "/";
+      color: var(--dark-grey);
+      margin: 0 8px 0 8px;
+    }
+
+    &--active {
+      color: var(--black);
+      position: relative;
+      display: flex;
+      align-items: center;
+
+      &:after {
+        display: none;
+      }
+    }
+  }
+}

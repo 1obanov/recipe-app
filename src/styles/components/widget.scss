@@ -1,0 +1,41 @@
+.widget {
+  position: relative;
+  border: 1px solid var(--grey);
+  padding: 20px;
+  text-align: center;
+
+  &__title {
+    margin: 0;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-size: 11px;
+    padding: 0 14px;
+    display: inline-block;
+    position: relative;
+    top: -33px;
+    background-color: var(--white);
+  }
+
+  &__list {
+    display: grid;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+
+    &--single-column {
+      gap: 16px;
+      grid-template-columns: 1fr;
+    }
+
+    &--three-columns {
+      gap: 32px 16px;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      width: calc(100% - 32px);
+
+      @media (max-width: 575px) {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+  }
+}

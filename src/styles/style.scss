@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+@import "./base/common";
+
+@import "./components/card";
+@import "./components/loader-line";
+@import "./components/headline";
+@import "./components/header";
+@import "./components/footer";
+@import "./components/sidebar-category";
+@import "./components/sidebar-recipe";
+@import "./components/breadcrumb";
+@import "./components/recipe-info";
+@import "./components/widget";
+@import "./components/contact-box";
+
+@import "./layouts/about";
+@import "./layouts/contact";
+@import "./layouts/get-in-touch";
+@import "./layouts/single-recipe";
+@import "./layouts/no-results";

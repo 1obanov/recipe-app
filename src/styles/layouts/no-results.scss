@@ -1,0 +1,42 @@
+.no-results {
+  padding: 160px 0 80px;
+
+  &__icon {
+    position: relative;
+    text-align: center;
+    margin-bottom: 32px;
+
+    svg {
+      position: relative;
+    }
+
+    .circle-small,
+    .circle-medium,
+    .circle-large {
+      border-radius: 50%;
+      display: block;
+      position: absolute;
+      top: 15%;
+      left: 50%;
+      transform: translateX(-50%) translateY(-50%);
+    }
+
+    .circle-small {
+      width: 75px;
+      height: 75px;
+      background: rgba(0, 0, 0, 0.08);
+    }
+
+    .circle-medium {
+      width: 150px;
+      height: 150px;
+      background: rgba(0, 0, 0, 0.06);
+    }
+
+    .circle-large {
+      width: 250px;
+      height: 250px;
+      background: rgba(0, 0, 0, 0.04);
+    }
+  }
+}

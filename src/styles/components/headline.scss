@@ -1,0 +1,35 @@
+.headline {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 50px;
+
+  &__title {
+    margin: 0 0 16px;
+    font-size: 48px;
+    font-weight: 400;
+
+    @media (max-width: 767px) {
+      font-size: 36px;
+    }
+
+    &:only-child {
+      margin: 0;
+    }
+  }
+
+  &__subtitle {
+    margin: 0 0 24px;
+
+    &:last-child {
+      margin: 0;
+    }
+  }
+
+  &--align-left {
+    text-align: left;
+  }
+
+  &--mb-0 {
+    margin-bottom: 0;
+  }
+}

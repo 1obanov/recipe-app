@@ -1,0 +1,151 @@
+:root {
+  --primary: #b2edb2;
+  --secondary: #e8fae8;
+  --black: #121212;
+  --white: #ffffff;
+  --light-grey: #f8f8f8;
+  --grey: #e0e0e0;
+  --dark-grey: #7e7e7e;
+}
+
+* {
+  box-sizing: inherit;
+  max-height: 1000000px;
+
+  &:after,
+  &:before {
+    box-sizing: inherit;
+  }
+}
+
+html {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: "DM Sans", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell",
+    "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: var(--white);
+}
+
+a {
+  color: var(--black);
+  text-decoration: none;
+}
+
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.section {
+  padding: 50px 0;
+
+  &--no-indent {
+    padding: 0;
+  }
+}
+
+.container {
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.main {
+  flex-grow: 1;
+  margin-top: 95px;
+
+  @media (max-width: 767px) {
+    margin-top: 78px;
+  }
+}
+
+.btn {
+  position: relative;
+  display: inline-block;
+  color: var(--white);
+  background-color: var(--black);
+  border: none;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 15px 30px;
+  overflow: hidden;
+
+  @media (max-width: 767px) {
+    font-size: 16px;
+    padding: 12px 24px;
+  }
+
+  span {
+    position: relative;
+    z-index: 1;
+  }
+
+  @media (hover: hover) {
+    &:hover {
+      .btn__overlay {
+        transform: translateY(0);
+      }
+    }
+  }
+
+  &__overlay {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+    transform: translateY(100%);
+    background-color: var(--black);
+    z-index: 0;
+    transition: transform 0.3s cubic-bezier(0.37, -0.05, 0, 0.79);
+  }
+}
+
+.list {
+  position: relative;
+  gap: 48px 24px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+  @media (max-width: 767px) {
+    gap: 32px 16px;
+  }
+
+  &.no-results {
+    display: block;
+  }
+
+  &__item {
+    width: calc((100% - (4 * 24px)) / 4);
+
+    @media (max-width: 1199px) {
+      width: calc((100% - (3 * 24px)) / 3);
+    }
+
+    @media (max-width: 991px) {
+      width: calc((100% - (2 * 24px)) / 2);
+    }
+
+    @media (max-width: 575px) {
+      width: 100%;
+    }
+  }
+}
