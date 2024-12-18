@@ -1,11 +1,11 @@
-import { BrowserRouter as Router } from "react-router-dom";
+import { BrowserRouter as HashRouter } from "react-router-dom";
 import { Main } from "./layouts/Main";
 
 function App() {
   return (
-    <Router basename='/recipe-app'>
+    <HashRouter basename='/recipe-app'>
       <Main />
-    </Router>
+    </HashRouter>
   );
 }
 
