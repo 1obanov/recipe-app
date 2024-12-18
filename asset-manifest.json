@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/recipe-app/static/css/main.2a26d80a.css",
-    "main.js": "/recipe-app/static/js/main.049e99ce.js",
+    "main.js": "/recipe-app/static/js/main.e2f0a616.js",
     "static/media/contact.jpg": "/recipe-app/static/media/contact.7772b1735b1239ddc3cf.jpg",
     "static/media/recipe.jpg": "/recipe-app/static/media/recipe.e07ff0ef4e1439383f56.jpg",
     "static/media/about.jpg": "/recipe-app/static/media/about.4124d42b7c2232188c9e.jpg",
@@ -13,10 +13,10 @@
     "static/media/ico-hamburger-menu.svg": "/recipe-app/static/media/ico-hamburger-menu.f26669187524be7b37fea8ef39e9905c.svg",
     "static/media/ico-search.svg": "/recipe-app/static/media/ico-search.09cc4b63d4feda8fce7af7c2fc477080.svg",
     "main.2a26d80a.css.map": "/recipe-app/static/css/main.2a26d80a.css.map",
-    "main.049e99ce.js.map": "/recipe-app/static/js/main.049e99ce.js.map"
+    "main.e2f0a616.js.map": "/recipe-app/static/js/main.e2f0a616.js.map"
   },
   "entrypoints": [
     "static/css/main.2a26d80a.css",
-    "static/js/main.049e99ce.js"
+    "static/js/main.e2f0a616.js"
   ]
 }
